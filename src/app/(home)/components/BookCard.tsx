@@ -7,7 +7,7 @@ const BookCard = ({ book }: { book: Book }) => {
   return (
     <div className="flex gap-5 border p-5 shadow-md rounded">
       <Image
-        src={book.coverImage}
+        src={book.coverImage || "/placeholder-book.png"}
         alt={book.title}
         width={0}
         height={0}
